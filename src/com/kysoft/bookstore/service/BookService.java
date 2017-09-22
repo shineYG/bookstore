@@ -58,8 +58,6 @@ public class BookService {
         //1. 更新 mybooks 数据表相关记录的 salesamount 和 storenumber
         bookDAO.batchUpdateStoreNumberAndSalesAmount(shoppingCart.getItems());
 
-        int i = 10 / 0;
-
         //2. 更新 account 数据表的 balance
         accountDAO.updateBalance(Integer.parseInt(accountId), shoppingCart.getTotalMoney());
 
