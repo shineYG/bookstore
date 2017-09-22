@@ -8,7 +8,7 @@
 			this.onclick = function(){
 				var serializeVal = $(":hidden").serialize();
 				var href = this.href + "&" + serializeVal;
-				window.location.href = href;			
+				window.location.href = encodeURI(href);
 				return false;
 			};
 		});
